@@ -89,11 +89,6 @@ module EventCalendar
       link_to(text, params.merge(:action => day_action, :year => date.year, :month => date.month, :day => date.day), :class => 'ec-day-link')
     end
 
-    # check if we should display without a background color
-    def no_event_bg?(event, options)
-      options[:use_all_day] && !event.all_day && event.days == 0
-    end
-
     # default html for displaying an event's time
     # to customize: override, or do something similar, in your helper
     # for instance, you may want to add localization
