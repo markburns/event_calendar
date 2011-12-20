@@ -142,7 +142,6 @@ module EventCalendar
         while(last_day_of_week <= last_day_of_cal)
           add_week_row
 
-          @top += row_heights[row_num]
           # increment the calendar row we are on, and the week
           @row_num += 1
           @first_day_of_week += 7
